@@ -1,15 +1,43 @@
-<!-- header.mjml -->
-<mj-section>
-  <mj-column>
-    <mj-text>This is a header</mj-text>
-  </mj-column>
-</mj-section>
-
 <!-- main.mjml -->
 <mjml>
   <mj-body>
     <mj-container>
-      <mj-include path="./header" /> <!-- or 'header.mjml' -->
+
+      <mj-section></mj-section><!-- logo top -->
+
+      <mj-section></mj-section><!-- heading statement -->
+
+      <mj-section></mj-section><!-- video player -->
+
+      <mj-section></mj-section><!-- further selling statment "why you'll love it"-->
+
+      <mj-section></mj-section><!-- reason 1 -->
+
+      <mj-section></mj-section><!-- reason 2 -->
+
+      <mj-section></mj-section><!-- reason 3 -->
+
+      <mj-section></mj-section><!-- reason 4 -->
+
+      <mj-section></mj-section><!-- selling statement "ready to start tapping" -->
+
+      <mj-section></mj-section><!-- 3 steps -->
+
+      <mj-section></mj-section><!-- CTA button -->
+
+      <mj-section></mj-section><!-- customizable message -->
+
+      <mj-section></mj-section><!-- stylist signature include bottom border -->
+
+      <mj-section></mj-section><!-- footer nav -->
+
+      <mj-section></mj-section><!-- social icon/buttons -->
+
+      <mj-section></mj-section><!-- logo -->
+
+      <mj-section></mj-section><!-- fine print -->
+
+      </mjml>
     </mj-container>
   </mj-body>
 </mjml>
