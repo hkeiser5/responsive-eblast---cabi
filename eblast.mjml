@@ -1,0 +1,15 @@
+<!-- header.mjml -->
+<mj-section>
+  <mj-column>
+    <mj-text>This is a header</mj-text>
+  </mj-column>
+</mj-section>
+
+<!-- main.mjml -->
+<mjml>
+  <mj-body>
+    <mj-container>
+      <mj-include path="./header" /> <!-- or 'header.mjml' -->
+    </mj-container>
+  </mj-body>
+</mjml>
