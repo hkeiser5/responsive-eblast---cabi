@@ -2,42 +2,63 @@
 <mjml>
   <mj-body>
     <mj-container>
+      <!-- logo top -->
+      <mj-section>
+        <mj-column>
+          <mj-image width="150"
+          src="./images/logo.gif"
+          padding="0"/><!-- not possible to add just a border to the bottom of the image, rethink how this works-->
+        </mj-column>
+      </mj-section>
 
-      <mj-section></mj-section><!-- logo top -->
+      <!-- heading statement -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- heading statement -->
+      <!-- video player -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- video player -->
+      <!-- further selling statment "why you'll love it"-->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- further selling statment "why you'll love it"-->
+      <!-- reason 1 -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- reason 1 -->
+      <!-- reason 2 -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- reason 2 -->
+      <!-- reason 3 -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- reason 3 -->
+      <!-- reason 4 -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- reason 4 -->
+      <!-- selling statement "ready to start tapping" -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- selling statement "ready to start tapping" -->
+      <!-- 3 steps -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- 3 steps -->
+      <!-- CTA button -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- CTA button -->
+      <!-- customizable message -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- customizable message -->
+      <!-- stylist signature include bottom border -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- stylist signature include bottom border -->
+      <!-- footer nav -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- footer nav -->
+      <!-- social icon/buttons -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- social icon/buttons -->
+      <!-- logo -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- logo -->
+      <!-- fine print -->
+      <mj-section></mj-section>
 
-      <mj-section></mj-section><!-- fine print -->
-
-      </mjml>
     </mj-container>
   </mj-body>
 </mjml>
