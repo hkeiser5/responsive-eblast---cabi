@@ -3,16 +3,22 @@
   <mj-body>
     <mj-container>
       <!-- logo top -->
-      <mj-section>
-        <mj-column>
-          <mj-image width="150"
+      <mj-section><!--rework so that this section divides into 3 columns with image in center and border on bottom of center-->
+        <mj-group>
+          <mj-column><mj-spacer height="5px"/></mj-column>
+        <mj-column border-bottom="1px solid #000000">
+          <mj-image width="120"
           src="./images/logo.gif"
-          padding="0"/><!-- not possible to add just a border to the bottom of the image, rethink how this works-->
+          padding="0"/><!-- to make this responsive in size go in and change it's parent's table size in the outputted html to the percentage I want-->
         </mj-column>
+        <mj-column><mj-spacer height="5px"/></mj-column>
+      </mj-group>
       </mj-section>
 
       <!-- heading statement -->
-      <mj-section></mj-section>
+      <mj-section>
+        
+      </mj-section>
 
       <!-- video player -->
       <mj-section></mj-section>
