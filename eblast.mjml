@@ -3,14 +3,23 @@
   <mj-head>
     <mj-preview>cabi style is just a tap away</mj-preview><!-- shows up in inbox-->
     <mj-attributes> <!--ORDER: inline, classes, default-->
-        <mj-text  font-family="Arial, sans-serif" font-weight="100"/>
+        <mj-text  font-family="Arial, sans-serif" font-weight="100" font-size="16"/>
         <!--<mj-class name="blue" /> <=classes written like this -->
         <mj-all padding="0" />
     </mj-attributes>
     <mj-style><!-- override styles, applied only to the head-->
+      @media only screen and (max-width: 320px) {
+        h2 {
+          font-size:15px !important;
+          line-height:20px !important;
+        }
+        p {
+          font-size:14px;
+        }
+      }
     </mj-style>
       <mj-style inline="inline"><!-- override styles applied inline NOT WORKING WITH 3.5.5 on MAC, use online editor to create HTML-->
-        h {
+        h2 {
           font-weight:100;
           font-size:18px;
           line-height:26px;
