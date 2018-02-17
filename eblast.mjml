@@ -1,14 +1,34 @@
 <!-- main.mjml -->
 <mjml>
+  <mj-head>
+    <mj-preview>cabi style is just a tap away</mj-preview><!-- shows up in inbox-->
+    <mj-attributes> <!--ORDER: inline, classes, default-->
+        <mj-text  font-family="Arial, sans-serif" font-weight="100"/>
+        <!--<mj-class name="blue" /> <=classes written like this -->
+        <mj-all padding="0" />
+    </mj-attributes>
+    <mj-style><!-- override styles, applied only to the head-->
+    </mj-style>
+      <mj-style inline="inline"><!-- override styles applied inline NOT WORKING WITH 3.5.5 on MAC, use online editor to create HTML-->
+        h {
+          font-weight:100;
+          font-size:18px;
+          line-height:26px;
+        }
+      </mj-style>
+      <mj-title>Introducing cabi Tap</mj-title>
+  </mj-head>
   <mj-body>
     <mj-container>
       <!-- logo top -->
-      <mj-section><!--rework so that this section divides into 3 columns with image in center and border on bottom of center-->
+      <mj-section>
         <mj-group>
           <mj-column><mj-spacer height="5px"/></mj-column>
         <mj-column border-bottom="1px solid #000000">
           <mj-image width="120"
           src="./images/logo.gif"
+          alt="cabi"
+          href="http://www.cabionline.com"
           padding="0"/><!-- to make this responsive in size go in and change it's parent's table size in the outputted html to the percentage I want-->
         </mj-column>
         <mj-column><mj-spacer height="5px"/></mj-column>
@@ -17,7 +37,13 @@
 
       <!-- heading statement -->
       <mj-section>
-        
+        <mj-column>
+          <mj-image src="./images/introducing.gif"
+            alt="Introducing cabi Tap"
+            padding-top="30"/>
+          <mj-text align="center"><!-- remove style from h2 before final output-->
+            <h2 style="font-weight:100;font-size:18px;line-height:26px;">Our new app serving up 24/7 style is just a tap away!</h2></mj-text>
+        </mj-column>
       </mj-section>
 
       <!-- video player -->
