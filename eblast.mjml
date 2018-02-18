@@ -20,6 +20,12 @@
         .centered {
           text-align:center !important;
         }
+        .tbpborder>table { <!--have to target child table as output for mjcolumn affects table not div like this class does-->
+          border-top:1px solid #ff99a7 !important;
+          border-bottom:1px solid #ff99a7 !important;
+          border-left:none !important;
+          border-right:none !important;
+        }
       }
     </mj-style>
       <mj-style inline="inline"><!-- override styles applied inline NOT WORKING WITH 3.5.5 on MAC, use online editor to create HTML-->
@@ -131,10 +137,32 @@
       </mj-section>
 
       <!-- selling statement "ready to start tapping" -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-image src="./images/ready_to_start_tapping.gif"
+            alt="ready to start tapping?"/>
+            <!-- remove style from h2 before outputting-->
+          <mj-text align="center"><h2 style="font-weight:100;font-size:18px;line-height:26px;">Getting the app is easy as 1-2-3!</h2></mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- 3 steps -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column >
+          <mj-image src="./images/step1.gif" alt="step 1" padding-top="15"/>
+          <mj-text padding="0px 5px 5px 5px" align="center"><p>Download cabi Tap</p></mj-text>
+        </mj-column>
+        <mj-column css-class="tbpborder"
+                   border-left="1px solid #ff99a7"
+                   border-right="1px solid #ff99a7">
+          <mj-image src="./images/step2.gif" alt="step 2" padding-top="15"/>
+          <mj-text padding="0px 5px 5px 5px" align="center"><p>Register, then log in with your email address</p></mj-text>
+        </mj-column>
+        <mj-column >
+          <mj-image src="./images/step3.gif" alt="step 3" padding-top="15"/>
+          <mj-text padding="0px 5px 5px 5px" align="center"><p>Complete your profilequestionnaire</p></mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- CTA button -->
       <mj-section></mj-section>
