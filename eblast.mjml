@@ -37,6 +37,10 @@
         .ariahidden {
           aria-hidden:true;
         }
+        a {
+          color:#000000;
+          font-weight:bold;
+        }
       </mj-style>
       <mj-title>Introducing cabi Tap</mj-title>
   </mj-head>
@@ -160,7 +164,7 @@
         </mj-column>
         <mj-column >
           <mj-image src="./images/step3.gif" alt="step 3" padding-top="15"/>
-          <mj-text padding="0px 5px 5px 5px" align="center"><p>Complete your profilequestionnaire</p></mj-text>
+          <mj-text padding="0px 5px 5px 5px" align="center"><p>Complete your profile questionnaire</p></mj-text>
         </mj-column>
       </mj-section>
 
@@ -187,7 +191,16 @@
       </mj-section>
 
       <!-- stylist signature include bottom border -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column border-bottom="2px solid #000000">
+          <mj-image src="./images/your_cabi_stylist.gif"
+                    alt="Your cabi stylist"
+                    padding="10px 30px 0px 10px"/>
+          <mj-text align="center" padding="0px 0px 30px 0px"><p style="padding:0;line-height:15px;">stylistFname stylistLname<br></br>
+            <a href="sylistweb">stylistfnamelastname.cabionline.com</a><br></br>
+            <a href="sylistemail">stylistfnamelastname@cabionline.com</a></p></mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- footer nav -->
       <mj-section></mj-section>
