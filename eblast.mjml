@@ -5,7 +5,8 @@
     <mj-attributes> <!--ORDER: inline, classes, default-->
         <mj-text  font-family="Arial, sans-serif" font-weight="100" font-size="16"/>
         <!--<mj-class name="blue" /> <=classes written like this -->
-        <mj-all padding="0" />
+        <mj-all padding="0"
+                background-color="#ffffff"/>
     </mj-attributes>
     <mj-style><!-- override styles, applied only to the head-->
       @media only screen and (max-width: 320px) {
@@ -16,6 +17,9 @@
         p {
           font-size:14px;
         }
+        .centered {
+          text-align:center !important;
+        }
       }
     </mj-style>
       <mj-style inline="inline"><!-- override styles applied inline NOT WORKING WITH 3.5.5 on MAC, use online editor to create HTML-->
@@ -23,6 +27,9 @@
           font-weight:100;
           font-size:18px;
           line-height:26px;
+        }
+        .ariahidden {
+          aria-hidden:true;
         }
       </mj-style>
       <mj-title>Introducing cabi Tap</mj-title>
@@ -56,22 +63,72 @@
       </mj-section>
 
       <!-- video player -->
-      <mj-section></mj-section>
-
-      <!-- further selling statment "why you'll love it"-->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column>
+        <mj-image src="./images/why_youll_love_it.png"
+          alt="Why you'll love it video"
+          href="#"
+          padding-bottom="20"/><!--get link to video from field dept-->
+        </mj-column>
+      </mj-section>
 
       <!-- reason 1 -->
-      <mj-section></mj-section>
+      <mj-section padding-bottom="20">
+        <mj-column vertical-align="middle">
+          <mj-image src="./images/digital_lookbook.png"
+          css-class="ariahidden"
+          alt="digital lookbook"/>
+        </mj-column>
+        <mj-column vertical-align="middle"><!--mjml vertical-align=middle only works if all columns set-->
+          <mj-text padding="0px 15px">
+            <p class="centered">Follow along at the show with your digital Look Book</p>
+            <p class="centered">Instantly save and share your Favorites with your Stylist</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- reason 2 -->
-      <mj-section></mj-section>
+      <mj-section direction="rtl" padding-bottom="20">
+        <mj-column vertical-align="middle">
+          <mj-image src="./images/match_favorites_to_closet.png"
+          css-class="ariahidden"
+          alt="match your favorites with clothes from your closet"/>
+        </mj-column>
+        <mj-column vertical-align="middle">
+          <mj-text padding="0px 15px" align="right">
+            <p class="centered">Shop confidently—see how to style your Favorites withwhat you already own</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- reason 3 -->
-      <mj-section></mj-section>
+      <mj-section padding-bottom="20">
+        <mj-column vertical-align="middle">
+          <mj-image src="./images/order_electronically.png"
+          css-class="ariahidden"
+          alt="order electronically"/>
+        </mj-column>
+        <mj-column vertical-align="middle"><!--mjml vertical-align=middle only works if all columns set-->
+          <mj-text padding="0px 15px">
+            <p class="centered">Go paperless—send your order to your Stylist electronically at the show</p>
+            <p class="centered">Shopping made easy—get your cabi fashion fix beyond the show andon the go</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- reason 4 -->
-      <mj-section></mj-section>
+      <mj-section direction="rtl" padding-bottom="20">
+        <mj-column vertical-align="middle">
+          <mj-image src="./images/daily_personalized_outfits.png"
+          css-class="ariahidden"
+          alt="daily personalized outfit ideas"/>
+        </mj-column>
+        <mj-column vertical-align="middle">
+          <mj-text padding="0px 15px" align="right">
+            <p class="centered">Explore personalized outfit ideas served up daily</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
       <!-- selling statement "ready to start tapping" -->
       <mj-section></mj-section>
