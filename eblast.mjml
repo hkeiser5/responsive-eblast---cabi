@@ -26,6 +26,10 @@
           border-left:none !important;
           border-right:none !important;
         }
+        .nvbtn>td>table>tbody>tr>td>p>span {
+          font-size:14px !important;
+        }
+
       }
     </mj-style>
       <mj-style inline="inline"><!-- override styles applied inline NOT WORKING WITH 3.5.5 on MAC, use online editor to create HTML-->
@@ -41,6 +45,25 @@
           color:#000000;
           font-weight:bold;
         }
+        <!-- convoluted targeting of nav buttons-->
+        .nvbtn>td>table {
+          width:100%;
+        }
+
+        .nvbtn>td>table>tbody>tr>td {
+          background:#fff;
+          border-radius:0px !important;
+          border:1px solid #d7d7d7 !important;
+        }
+        .nvbtn>td>table>tbody>tr>td>p {
+          background:#fff !important;
+        }
+        .nvbtn>td>table>tbody>tr>td>p>span {
+          font-size:10px;
+          font-weight:bold;
+          color:#9c9c9c;
+        }
+
       </mj-style>
       <mj-title>Introducing cabi Tap</mj-title>
   </mj-head>
@@ -177,7 +200,7 @@
                      padding="30px 0px 10px 0px"
                      href="">
             DOWNLOAD cabi TAP <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span>
-          <mj-button>
+          </mj-button>
         </mj-column>
       </mj-section>
 
@@ -203,7 +226,45 @@
       </mj-section>
 
       <!-- footer nav -->
-      <mj-section></mj-section>
+      <mj-section><!-- change to 7 columns or buttons to make work correctly-->
+        <mj-column>
+          <mj-button css-class="nvbtn"
+                     href="">
+            <span>COLLECTION</span>
+          </mj-button>
+          </mj-column>
+          <mj-column>
+          <mj-button css-class="nvbtn"
+                     href="">
+              <span>HOST</span>
+          </mj-button>
+        </mj-column>
+        <mj-column>
+        <mj-button css-class="nvbtn"
+                   href="">
+            <span>JOIN US</span>
+        </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-button css-class="nvbtn"
+                     href="">
+              <span>cabi TV</span>
+          </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-button css-class="nvbtn"
+                     href="">
+              <span>BLOG</span>
+          </mj-button>
+        </mj-column>
+        <mj-column>
+          <mj-button css-class="nvbtn"
+                     href="">
+              <span>FOUNDATION</span>
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
 
       <!-- social icon/buttons -->
       <mj-section></mj-section>
