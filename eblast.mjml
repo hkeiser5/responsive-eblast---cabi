@@ -29,6 +29,10 @@
         .nvbtn>td>table>tbody>tr>td>p>span {
           font-size:14px !important;
         }
+        .nvbtn>td>table>tbody>tr>td {
+          border-right:none !important;
+          border-left:none !important;
+        }
 
       }
     </mj-style>
@@ -54,6 +58,7 @@
           background:#fff;
           border-radius:0px !important;
           border:1px solid #d7d7d7 !important;
+          padding:10px 0px !important;
         }
         .nvbtn>td>table>tbody>tr>td>p {
           background:#fff !important;
@@ -198,7 +203,7 @@
                      color="white"
                      border-radius="0"
                      padding="30px 0px 10px 0px"
-                     href="">
+                     href="https://www.cabionline.com/cabitap/"><!--url needs php identifier-->
             DOWNLOAD cabi TAP <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span>
           </mj-button>
         </mj-column>
@@ -226,41 +231,41 @@
       </mj-section>
 
       <!-- footer nav -->
-      <mj-section><!-- change to 7 columns or buttons to make work correctly-->
+      <mj-section><!-- links need php identifier added to them-->
         <mj-column>
           <mj-button css-class="nvbtn"
-                     href="">
-            <span>COLLECTION</span>
+                     href="https://www.cabionline.com/collection/clothes/">
+            <span>COLLECTION <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
           </mj-button>
           </mj-column>
           <mj-column>
           <mj-button css-class="nvbtn"
-                     href="">
-              <span>HOST</span>
+                     href="https://www.cabionline.com/fashion-experience/">
+              <span>HOST <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
           </mj-button>
         </mj-column>
         <mj-column>
         <mj-button css-class="nvbtn"
-                   href="">
-            <span>JOIN US</span>
+                   href="https://www.cabionline.com/career-in-fashion/">
+            <span>JOIN US <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
         </mj-button>
         </mj-column>
         <mj-column>
           <mj-button css-class="nvbtn"
-                     href="">
-              <span>cabi TV</span>
+                     href="https://www.cabionline.com/cabi-tv/">
+              <span>cabi TV <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
           </mj-button>
         </mj-column>
         <mj-column>
           <mj-button css-class="nvbtn"
-                     href="">
-              <span>BLOG</span>
+                     href="https://www.cabionline.com/blog/">
+              <span>BLOG <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
           </mj-button>
         </mj-column>
         <mj-column>
           <mj-button css-class="nvbtn"
-                     href="">
-              <span>FOUNDATION</span>
+                     href="https://www.cabionline.com/foundation/">
+              <span>FOUNDATION <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle;">&#9654;</span></span>
           </mj-button>
         </mj-column>
       </mj-section>
@@ -274,15 +279,15 @@
             display="twitter facebook instagram pinterest"
             twitter-icon-color="ff99a7"
             twitter-content=""
-            twitter-href="My google+ page"
+            twitter-href="https://twitter.com/cabiclothing/"
             facebook-icon-color="#ff99a7"
             facebook-content=""
-            facebook-href="My facebook page"
+            facebook-href="https://www.facebook.com/cabiclothing/"
             instagram-icon-color="#ff99a7"
             instagram-content=""
-            instagram-href="My google+ page"
+            instagram-href="https://www.instagram.com/cabiclothing/"
             pinterest-icon-color="#ff99a7"
-            pinterest-content=""
+            pinterest-content="https://www.pinterest.com/cabiclothing/"
             pinterest-href="My google+ page"
             padding-top="20px"
           />
@@ -308,8 +313,8 @@
       <!-- fine print -->
       <mj-section>
         <mj-column>
-          <mj-text align="center" font-size="10px" line-height="11px" padding="20px">
-            Unsubscribe | Privacy Policy | © 2018 cabi LLC. cabi experience, ltd. cabi Canada, ltd. All rights reserved.
+          <mj-text align="center" font-size="10px" line-height="11px" padding="20px"><!--unsubscribe link needs php identifier in it-->
+            <a text-decoration="none" href="https://cams.cabiclio.com/backoffice/control/unsubscribe?key=e37b15eddbc06f69482fb33e5fda77c60047fa92677c45c5">Unsubscribe</a> | <a text-decoration="none" href="://www.cabionline.com/privacy-policy/">Privacy Policy</a> | © 2018 cabi LLC. cabi experience, ltd. cabi Canada, ltd. All rights reserved.
             <br>21750 Arnold Center Rd. Carson, CA 90810
           </mj-text>
         </mj-column>
