@@ -267,13 +267,53 @@
 
 
       <!-- social icon/buttons -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column>
+          <!--add you tube and fix twitter after the output-->
+          <mj-social
+            display="twitter facebook instagram pinterest"
+            twitter-icon-color="ff99a7"
+            twitter-content=""
+            twitter-href="My google+ page"
+            facebook-icon-color="#ff99a7"
+            facebook-content=""
+            facebook-href="My facebook page"
+            instagram-icon-color="#ff99a7"
+            instagram-content=""
+            instagram-href="My google+ page"
+            pinterest-icon-color="#ff99a7"
+            pinterest-content=""
+            pinterest-href="My google+ page"
+            padding-top="20px"
+          />
+        </mj-column>
+      </mj-section>
 
       <!-- logo -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-group>
+          <mj-column><mj-spacer height="5px"/></mj-column>
+        <mj-column>
+          <mj-image width="120"
+          src="./images/logo.gif"
+          alt="cabi"
+          href="http://www.cabionline.com"
+          padding="0"/><!-- to make this responsive in size go in and change it's parent's table size in the outputted html to the percentage I want-->
+        </mj-column>
+        <mj-column><mj-spacer height="5px"/></mj-column>
+      </mj-group>
+      </mj-section>
+
 
       <!-- fine print -->
-      <mj-section></mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="10px" line-height="11px" padding="20px">
+            Unsubscribe | Privacy Policy | © 2018 cabi LLC. cabi experience, ltd. cabi Canada, ltd. All rights reserved.
+            <br>21750 Arnold Center Rd. Carson, CA 90810
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
     </mj-container>
   </mj-body>
