@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -81,6 +82,7 @@
 </style>
 <![endif]-->
   <!--[if !mso]><!-->
+
   <!--<![endif]-->
   <style type="text/css">
     @media only screen and (max-width:480px) {
@@ -178,7 +180,7 @@
                           <table role="presentation" width="80%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0" align="center" border="0">
                             <tbody>
                               <tr>
-                                <td style="width:120px"><a href="http://www.cabionline.com" target="_blank" style="color:#000;font-weight:700"><img alt="cabi" height="auto" src="./images/logo.gif" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:100%;height:auto" width="120"></a></td>
+                                <td style="width:120px"><a href="http://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com" target="_blank" style="color:#000;font-weight:700"><img alt="cabi" height="auto" src="./images/logo.gif" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:100%;height:auto" width="120"></a></td>
                               </tr>
                             </tbody>
                           </table>
@@ -336,7 +338,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0" align="center" border="0">
                           <tbody>
                             <tr>
-                              <td style="width:300px;" align="center"><img alt="digital lookbook" height="auto" src="./images/digital_lookbook.png" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:85%;height:auto;" width="300"></td>
+                              <td style="width:300px" align="center"><img alt="digital lookbook" height="auto" src="./images/digital_lookbook.png" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:85%;height:auto" width="300"></td>
                             </tr>
                           </tbody>
                         </table>
@@ -731,7 +733,7 @@
                           <tbody>
                             <tr>
                               <td style="border:none;border-radius:0;color:#fff;cursor:auto;padding:10px 25px" align="center" valign="middle" bgcolor="#ff99a7">
-                                <a href="https://www.cabionline.com/cabitap/" style="text-decoration:none;background:#ff99a7;color:#fff;font-family:Arial,sans-serif;font-size:13px;font-weight:400;line-height:120%;text-transform:none;margin:0"
+                                <a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/cabitap/" style="text-decoration:none;background:#ff99a7;color:#fff;font-family:Arial,sans-serif;font-size:13px;font-weight:400;line-height:120%;text-transform:none;margin:0"
                                   target="_blank">
                                   <!--url needs php identifier-->DOWNLOAD cabi TAP <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></a>
                               </td>
@@ -775,7 +777,7 @@
                     <tr>
                       <td style="word-wrap:break-word;font-size:0;padding:0 20px" align="left">
                         <div style="cursor:auto;color:#000;font-family:Arial,sans-serif;font-size:16px;font-weight:100;line-height:22px;text-align:left">
-                          <p>I'm so excited to share the newest service from cabi, cabi Tap. Now we can put everything already in your closet from past seasons into a digital closet! Then we can check how all the new items from the latest season pair back to the great items you already have and love. I can't wait for you to try this, and then we can have a one-on-one style session at your home. Download it today, check it out, and I'll call you tomorrow to set up a private consultation.</p>
+                          <p><?php echo $_SESSION['custommessage']?></p>
                         </div>
                       </td>
                     </tr>
@@ -825,7 +827,8 @@
                     <tr>
                       <td style="word-wrap:break-word;font-size:0;padding:0 0 30px 0" align="center">
                         <div style="cursor:auto;color:#000;font-family:Arial,sans-serif;font-size:16px;font-weight:100;line-height:22px;text-align:center">
-                          <p style="padding:0;line-height:15px">stylistFname stylistLname<br><br><a href="sylistweb" style="color:#000;font-weight:700">stylistfnamelastname.cabionline.com</a><br><br><a href="sylistemail" style="color:#000;font-weight:700">stylistfnamelastname@cabionline.com</a></p>
+                          <p style="padding:0;line-height:15px"><?php echo $_SESSION['stylistFirstname']?> <?php echo $_SESSION['stylistLastname']?><br><br><a href="http://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com" style="color:#000;font-weight:700"><?php echo $_SESSION['stylistwebaddress']?>.cabionline.com</a><br><br>
+                            <a href="mailto:<?php echo  $_SESSION['stylistwebaddress']?>@cabionline?subject=cabi Tap" style="color:#000;font-weight:700"><?php echo $_SESSION['stylistwebaddress']?>@cabionline.com</a></p>
                         </div>
                       </td>
                     </tr>
@@ -866,7 +869,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/collection/clothes/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/collection/clothes/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>COLLECTION <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -887,7 +890,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/fashion-experience/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/fashion-experience/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>HOST <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -908,7 +911,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/career-in-fashion/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/career-in-fashion/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>JOIN US <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -929,7 +932,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/cabi-tv/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/cabi-tv/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>cabi TV <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -950,7 +953,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/blog/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/blog/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>BLOG <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -971,7 +974,7 @@
                         <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate" align="center" border="0" width="100%">
                           <tbody>
                             <tr>
-                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://www.cabionline.com/foundation/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
+                              <td style="background:#fff;color:#fff;cursor:auto;border-radius:0;border:1px solid #d7d7d7;padding:10px 0" align="center" valign="middle" bgcolor="#ffffff"><a href="https://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com/foundation/" style="text-decoration:none;background:#fff;color:#9c9c9c;font-family:Arial,sans-serif;font-size:10px;font-weight:bold;line-height:120%;text-transform:none;margin:0"
                                   target="_blank"><span>FOUNDATION <span style="font-size:60%;aria-hidden:true;display:inline-block;vertical-align:middle">▶</span></span></a></td>
                             </tr>
                           </tbody>
@@ -1171,7 +1174,7 @@
                           <table role="presentation" width="80%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0" align="center" border="0">
                             <tbody>
                               <tr>
-                                <td style="width:120px"><a href="http://www.cabionline.com" target="_blank" style="color:#000;font-weight:700"><img alt="cabi" height="auto" src="./images/logo.gif" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:100%;height:auto;padding:10px 0px" width="120"></a></td>
+                                <td style="width:120px"><a href="http://<?php echo $_SESSION['stylistwebaddress']?>.cabionline.com" target="_blank" style="color:#000;font-weight:700"><img alt="cabi" height="auto" src="./images/logo.gif" style="border:none;border-radius:0;display:block;font-size:13px;outline:0;text-decoration:none;width:100%;height:auto;padding:10px 0px" width="120"></a></td>
                               </tr>
                             </tbody>
                           </table>
@@ -1233,7 +1236,7 @@
                     <tr>
                       <td style="word-wrap:break-word;font-size:0;padding:20px" align="center">
                         <div style="cursor:auto;color:#000;font-family:Arial,sans-serif;font-size:10px;font-weight:100;line-height:11px;text-align:center">
-                          <!--unsubscribe link needs php identifier in it--><a text-decoration="none" href="https://cams.cabiclio.com/backoffice/control/unsubscribe?key=e37b15eddbc06f69482fb33e5fda77c60047fa92677c45c5" style="color:#000;text-decoration: none">Unsubscribe</a> | <a text-decoration="none" href="://www.cabionline.com/privacy-policy/"
+                          <!--unsubscribe link needs php identifier in it--><a text-decoration="none" href="https://cams.cabiclio.com/backoffice/control/<?php echo $_SESSION['stylistID']?>unsubscribe?key=e37b15eddbc06f69482fb33e5fda77c60047fa92677c45c5" style="color:#000;text-decoration: none">Unsubscribe</a> | <a text-decoration="none" href="://www.cabionline.com/privacy-policy/"
                             style="color:#000;text-decoration: none">Privacy Policy</a> | © 2018 cabi LLC. cabi experience, ltd. cabi Canada, ltd. All rights reserved.<br>21750 Arnold Center Rd. Carson, CA 90810</div>
                       </td>
                     </tr>
